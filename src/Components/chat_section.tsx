@@ -3,6 +3,7 @@ import { useEffect, useState, useCallback, useRef } from 'react'
 import axios from 'axios'
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { Image } from '@chakra-ui/react'
+import Time_divider from './Time_divider';
 import '../App.css'
 
 interface chatType {
@@ -41,12 +42,14 @@ const Chat_section = () => {
   }, []);
 
   return (
-    <div className='bg-[#FAF9F4] space-y-5'>
+    <div className='bg-[#FAF9F4] space-y-5 font-mulish'>
+      <Time_divider />
       {
+        
         chatData && chatData.map((chat, ind) => {
           return (
             <div key={chat.id}
-              className='flex gap-3'
+              className='flex gap-1'
               ref={ind === chatData.length - 1 ? lastChatElementCallback : null}
             >
               {/* <img src={chat.sender.image} alt="" /> */}
@@ -58,7 +61,7 @@ const Chat_section = () => {
                 />
                 <RiVerifiedBadgeFill className={`absolute bottom-0 right-0 text-blue-500 ${chat.sender.is_kyc_verified?'':'hidden'}`} />
               </div>
-              <div className='w-[287px] ml-[1rem] bg-white shadow p-3 rounded-tr-xl rounded-br-xl rounded-bl-xl'>
+              <div className='w-[287px] ml-[0.6rem] bg-white shadow p-3 rounded-tr-xl rounded-br-xl rounded-bl-xl'>
                 <p className=' text-[#606060]'>{chat.message}</p>
               </div>
             </div>
