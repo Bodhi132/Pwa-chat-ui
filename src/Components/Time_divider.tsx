@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import { Box } from '@chakra-ui/react'
-import { Divider } from '@chakra-ui/react'
 import { AbsoluteCenter } from '@chakra-ui/react'
 import { useEffect } from 'react'
 

@@ -14,11 +14,9 @@ import axios from 'axios';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const [tripFrom, setTripFrom] = useState('')
   const [tripTo, setTripTo] = useState('')
   const [tripNo, setTripNo] = useState(0)
-  const [chatData, setChatData] = useState()
 
   useEffect(() => {
     axios.get('https://qa.corider.in/assignment/chat?page=0').then((res) => {
