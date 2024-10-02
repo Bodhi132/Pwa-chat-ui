@@ -3,7 +3,7 @@ import MessageBox from './MessageBox'
 
 const Footer = () => {
   return (
-    <div className='bg-[#FAF9F4]'>
+    <div className='bg-[#FAF9F4] fixed bottom-0'>
         <MessageBox />
     </div>
   )
