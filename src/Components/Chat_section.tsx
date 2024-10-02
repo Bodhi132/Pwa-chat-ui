@@ -42,7 +42,7 @@ const Chat_section = () => {
   }, []);
 
   return (
-    <div className='bg-[#FAF9F4] space-y-5 font-mulish'>
+    <div className='bg-[#FAF9F4] space-y-5 font-mulish h-[calc(90vh-15rem)]'>
       <Time_divider />
       {
         

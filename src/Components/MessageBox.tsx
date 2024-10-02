@@ -10,8 +10,8 @@ import { HiDocumentArrowDown } from "react-icons/hi2";
 
 const MessageBox = () => {
   return (
-    <div className='px-[1rem] py-[1rem] font-mulish'>
-      <InputGroup size='md' className='rounded-md'>
+    <div className='px-[3rem] py-[2rem] font-mulish fixed h-[12rem] bg-[#FAF9F4] w-full'>
+      <InputGroup size='md' className='rounded-md z-30'>
         <Input placeholder='Reply to @Rohit Yadav' width={'100%'} className='py-3 px-3 rounded'/>
         <InputRightElement width='4.5rem' className='gap-3' padding={'0.75rem'}>
           <Tooltip hasArrow={true} label={

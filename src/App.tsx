@@ -69,10 +69,10 @@ function App() {
           </Menu>
         </div>
       </div>
-      <div className='mt-[8rem] py-[1.5rem] h-[calc(90vh-8.5rem)] overflow-y-scroll hide-scrollbar px-[1rem]'>
+      <div className='mt-[8rem] pt-[1.5rem]  overflow-y-scroll hide-scrollbar px-[1rem]'>
         <Chat_section />
-      </div>
       <MessageBox />
+      </div>
     </div>
   )
 }
