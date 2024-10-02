@@ -8,7 +8,7 @@ import { GoReport } from "react-icons/go";
 import { Menu, MenuButton, Button } from '@chakra-ui/react';
 import { MenuList, MenuItem } from '@chakra-ui/react';
 import profile from '../src/Profile.png'
-import Chat_section from './Components/Chat_section';
+import Chat_section from '../src/Components/Chat_section';
 import MessageBox from './Components/MessageBox';
 import axios from 'axios';
 import './App.css'
